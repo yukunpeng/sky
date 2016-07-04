@@ -9,6 +9,14 @@ package com
 		
 		private var _nick:String;
 		private var _coin:int=222;
+		public var attack:int=10;//攻击
+		public var defens:int=3;//防御
+		
+		public var life:int=30;//当前生命
+		public var totalLife:int=100;//总生命
+		
+		
+		//伤害=敌人攻击-英雄防御
 		
 		
 		public function Hero(){

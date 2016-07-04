@@ -24,7 +24,8 @@
 				case this["mouseTf"]:
 					Main.ins.removeChild(this);
 					Main.ins.addChildAt(WarPanel.getIns(),0);
-					WarPanel.getIns().setReport("遇到地鼠一只");
+					
+					WarPanel.getIns().resetData("地鼠");
 					break;
 			}
 		}
