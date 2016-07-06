@@ -1,5 +1,7 @@
 package
 {
+	import com.Hero;
+	
 	import flash.display.Sprite;
 	import flash.display.StageScaleMode;
 	
@@ -20,9 +22,16 @@ package
 			LoadManager.loadTxt("asset/mapData.json",loadMapCom);
 		}
 		
-		//加载地图数据
+		//加载经验数据
 		private function loadMapCom(obj:Object):void{
 			MapManager.getIns().data=obj;
+			//加载经验
+			LoadManager.loadTxt("asset/expData.json",loadExpCom);
+		}
+		
+		//加载地图数据
+		private function loadExpCom(obj:Object):void{
+			Hero.getIns().gradeExpArr=obj as Array;
 			//加载怪
 			LoadManager.loadTxt("asset/monsterData.json",loadMonsterCom);
 		}

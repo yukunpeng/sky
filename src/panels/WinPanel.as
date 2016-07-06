@@ -1,5 +1,6 @@
 ﻿package panels {
 	
+	import com.Enemy;
 	import com.Hero;
 	import com.TopMenu;
 	
@@ -9,6 +10,11 @@
 	
 	public class WinPanel extends PanelBase {
 		
+		public function reset():void{
+			this["expTf"].text=Enemy.getIns().exp;
+			this["coinTf"].text=Enemy.getIns().coin;
+			this["enemyNickTf"].text=Enemy.getIns().nick;
+		}
 		
 		public function WinPanel() {
 			// constructor code

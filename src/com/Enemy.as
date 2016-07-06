@@ -11,6 +11,11 @@ package com
 		public var life:int=30;//当前生命
 		public var totalLife:int=100;//总生命
 		
+		public var coin:int=0;//掉落金币
+		public var exp:int=0;//掉落经验
+		
+		
+		
 		
 		
 		public function Enemy(){

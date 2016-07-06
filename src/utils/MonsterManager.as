@@ -10,6 +10,10 @@
 		
 		
 		
+		public function getMonsterObj(id:String):Object{
+			return data[id];
+		}
+		
 		//获取单例
 		private static var ins:MonsterManager;
 		public static function getIns():MonsterManager{

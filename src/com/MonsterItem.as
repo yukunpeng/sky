@@ -16,6 +16,7 @@
 		
 		public function MonsterItem() {
 			// constructor code
+			this.mouseChildren=false;
 		}
 	}
 	

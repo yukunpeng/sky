@@ -24,6 +24,7 @@
 				}
 				var levelItem:LevelItem=this["level"+i] as LevelItem;
 				levelItem.visible=true;
+				levelItem.level=i;
 				levelItem.setTxt(mapArr[i]["levelName"]);
 			}
 		}
