@@ -1,4 +1,4 @@
-﻿package com
+﻿package utils
 {
 	public class Tools
 	{
@@ -9,7 +9,7 @@
 				return 1;
 			}
 			//伤害0.6-1.4倍
-			return Math.ceil((6 + Math.random()*8)/10);
+			return Math.ceil(6 + Math.random()*8)/10*hurt;
 		}
 	}
 }

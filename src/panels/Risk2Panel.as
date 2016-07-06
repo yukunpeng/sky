@@ -9,6 +9,10 @@
 	
 	public class Risk2Panel extends PanelBase {
 		
+		//重置怪物数据
+		public function resetData():void{
+			
+		}
 		
 		public function Risk2Panel() {
 			// constructor code
