@@ -10,6 +10,14 @@
 	{
 		public var data:Object;
 		
+		//获取最高关卡
+		public function getMaxLevel():int{
+			return this.data.length-1;
+		}
+		//获取关卡中最高怪物pos
+		public function getMaxMonsterPos(level:int):int{
+			return this.data[level]["monsterArr"].length-1;
+		}
 		
 		//根据当前关卡获取怪物列表
 		public function getMonsterArr():Array{

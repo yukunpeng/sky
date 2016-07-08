@@ -13,8 +13,7 @@ package com
 		
 		public var coin:int=0;//掉落金币
 		public var exp:int=0;//掉落经验
-		
-		
+				
 		
 		
 		

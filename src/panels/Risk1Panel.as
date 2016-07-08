@@ -12,10 +12,7 @@
 	
 	public class Risk1Panel extends PanelBase {
 		
-		
-		
-		public function Risk1Panel() {
-			// constructor code
+		public function resetData():void{
 			var mapArr:Array=MapManager.getIns().getMapArr();
 			hideAllLevel();
 			for(var i:int=0;i<mapArr.length;i++){
@@ -27,6 +24,10 @@
 				levelItem.level=i;
 				levelItem.setTxt(mapArr[i]["levelName"]);
 			}
+		}
+		
+		public function Risk1Panel() {
+			// constructor code
 		}
 		
 		private function hideAllLevel():void{

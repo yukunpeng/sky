@@ -20,7 +20,7 @@
 			hideAllMonster();
 			for(var i:int=0;i<monsterArr.length;i++){
 				//显示解锁的怪物
-				if(Hero.getIns().curLevel==Hero.getIns().unlockLevel && i==Hero.getIns().unlockMonster+1){
+				if(Hero.getIns().curLevel==Hero.getIns().unlockLevel && i==Hero.getIns().unlockMonsterPos+1){
 					return;
 				}
 				var monsterItem:MonsterItem=this["monster"+i] as MonsterItem;
@@ -31,6 +31,8 @@
 				monsterItem.setTxt(monster["name"]);
 				//保存怪物id
 				monsterItem.id=monsterArr[i];
+				//保存怪物pos
+				monsterItem.pos=i;
 			}
 		}
 		
@@ -50,6 +52,7 @@
 				case this["backTf"]:
 					Main.ins.removeChild(this);
 					Main.ins.addChildAt(Risk1Panel.getIns(),0);
+					Risk1Panel.getIns().resetData();
 					break;
 				case this["monster0"]:
 				case this["monster1"]:
@@ -82,7 +85,9 @@
 					}else{
 						Enemy.getIns().exp=0;
 					}
-										
+					//设置选择的怪物pos
+					Hero.getIns().curMonsterPos=monsterItem.pos;
+
 					WarPanel.getIns().resetData();
 					//切换页面
 					Main.ins.removeChild(this);

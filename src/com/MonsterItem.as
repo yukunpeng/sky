@@ -6,6 +6,8 @@
 	public class MonsterItem extends MovieClip {
 		//怪物id
 		public var id:String;
+		//怪物pos
+		public var pos:int;
 		
 		
 		

@@ -18,8 +18,10 @@
 		{
 			switch(e.target){
 				case this["riskTf"]:
+					//跳转到冒险页面
 					Main.ins.removeChild(this);
 					Main.ins.addChildAt(Risk1Panel.getIns(),0);
+					Risk1Panel.getIns().resetData();
 					break;
 			}
 		}
