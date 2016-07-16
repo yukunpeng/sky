@@ -22,16 +22,16 @@ package com
 		public var unlockLevel:int=0;//当前解锁的最高关卡，0开始
 		
 		public var curMonsterPos:int=0;//当前进行的怪物，0开始
-		public var unlockMonsterPos:int=2;//解锁最高关卡的最高怪物，0开始
+		public var unlockMonsterPos:int=0;//解锁最高关卡的最高怪物，0开始
 		
 		private var _curGrade:int=0;//英雄当前等级，0开始
 		public var gradeExpArr:Array;//升级需要的经验值
 		private var _exp:int=0;//英雄当前经验
 		
 		
+		
+		
 		//伤害=敌人攻击-英雄防御
-		
-		
 		public function Hero(){
 		}
 		

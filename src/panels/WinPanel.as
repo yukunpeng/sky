@@ -38,7 +38,6 @@
 			}else{
 				//下一个怪物不存在
 				if(Hero.getIns().curLevel+1<=MapManager.getIns().getMaxLevel()){
-					trace(9);
 					//下一个关卡存在，解锁之
 					Hero.getIns().unlockLevel+=1;
 					//下一个怪物pos是0

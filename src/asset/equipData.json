@@ -1,0 +1,8 @@
+{
+	"1":{"name":"木质头盔","attack":0,"defens":1,"buy":10,"sale":5},
+	"2":{"name":"铁质头盔","attack":0,"defens":2,"buy":20,"sale":10},
+	"3":{"name":"桃木剑","attack":5,"defens":0,"buy":30,"sale":15},
+	"4":{"name":"铁剑","attack":20,"defens":0,"buy":100,"sale":50},
+	"5":{"name":"皮手套","attack":1,"defens":5,"buy":20,"sale":10},
+	"6":{"name":"书生头巾","attack":0,"defens":3,"buy":20,"sale":10}
+}

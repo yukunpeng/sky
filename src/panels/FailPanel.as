@@ -1,5 +1,6 @@
 ﻿package panels {
 	
+	import com.Enemy;
 	import com.Hero;
 	import com.TopMenu;
 	
@@ -9,6 +10,11 @@
 	
 	public class FailPanel extends PanelBase {
 		
+		public function reset():void{
+			//获得的经验和金币
+			this["enemyNickTf"].text=Enemy.getIns().nick;
+		}
+
 		
 		public function FailPanel() {
 			// constructor code

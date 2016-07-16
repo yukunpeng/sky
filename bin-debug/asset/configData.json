@@ -1,0 +1,7 @@
+[
+{"name":"equipData","url":"asset/equipData.json"},
+{"name":"expData","url":"asset/expData.json"},
+{"name":"mapData","url":"asset/mapData.json"},
+{"name":"monsterData","url":"asset/monsterData.json"},
+{"name":"shopData","url":"asset/shopData.json"}
+]

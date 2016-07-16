@@ -18,6 +18,8 @@ package
 		public function Main(){
 			Main.ins=this;
 			stage.scaleMode=StageScaleMode.SHOW_ALL;
+			
+			
 			//加载地图
 			LoadManager.loadTxt("asset/mapData.json",loadMapCom);
 		}

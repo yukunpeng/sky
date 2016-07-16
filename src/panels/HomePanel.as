@@ -23,6 +23,12 @@
 					Main.ins.addChildAt(Risk1Panel.getIns(),0);
 					Risk1Panel.getIns().resetData();
 					break;
+				case this["roleTf"]:
+					//跳转到冒险页面
+					Main.ins.removeChild(this);
+					Main.ins.addChildAt(RolePanel.getIns(),0);
+					RolePanel.getIns().reset();
+					break;
 			}
 		}
 		//获取单例

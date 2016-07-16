@@ -55,6 +55,7 @@
 						//失败
 						Main.ins.removeChild(this);
 						Main.ins.addChildAt(FailPanel.getIns(),0);
+						FailPanel.getIns().reset();
 						return;
 					}
 					if(Enemy.getIns().life<=0){
